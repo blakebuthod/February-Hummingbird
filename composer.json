@@ -1,5 +1,18 @@
 {
-    "require": {
-        "silex/silex": "~1.1",
-    }
+    
+  "require": {
+    "February Hummingbird/index.html": "~1.1",
+  }
+  "authors": [
+        {
+            "name": "Blake Buthod",
+            "email": "blakebuthod@gmail.com",
+            "homepage": "github.com/blakebuthod",
+            "role": "Developer"
+        },
+        {
+            "name": "Marisa Gearin",
+            "email": "marisa.gearin@gmail.com",
+            "role": "Writer"
+        }
 }

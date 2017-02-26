@@ -26,7 +26,7 @@
 </head>
 <body>
     <?php
-        require '/path/to/aws-autoloader.php';
+        require('vendor/autoload.php');
         echo <<<END
             <form action="$_SERVER[PHP_SELF]" method="post">
 END;
