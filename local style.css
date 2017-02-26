@@ -1,0 +1,80 @@
+body {
+    text-align: center;
+    font-family: 'Lora', serif;
+    color: #000000;
+    background-color: #cfdae8;
+}
+
+nav ul {
+    list-style: none;
+    position: absolute;
+    right: 20px;
+}
+
+nav ul li {
+    display: inline-block;
+    margin: 10px 20px 0 0;
+}
+
+nav input:focus {
+    outline: none;
+}
+
+#logo {
+    height: 350px;
+    width: 350px;
+}
+
+.content {
+    margin: 0 auto;
+    width: 60%;
+    min-width: 400px;
+    max-width: 500px;
+    text-align: justify;
+    margin-top: -15px;
+}
+
+.beginning {
+    text-align: center;
+    color: #3f007f;
+    margin-top: -25px;
+}
+
+.beg-logo {
+    height: auto;
+    width: auto;
+    min-width: 350px;
+}
+
+.options {
+    text-align: center;
+    width: 100%;
+}
+
+.options input {
+    margin-bottom:5px;
+}
+
+.button {
+    font-size: 14px;
+    font-family: 'Lora', serif;
+    background-color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    padding: 4px 10px 4px 10px;
+    margin-bottom: 5px;
+}
+
+.button:hover {
+    background-color: #333333;
+    color: #ffffff;
+}
+
+.button:focus {
+    outline: none;
+}
+
+.ending {
+    font-style: italic;
+    font-weight: bold;
+}
