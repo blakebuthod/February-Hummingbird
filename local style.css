@@ -5,15 +5,26 @@ body {
     background-color: #cfdae8;
 }
 
+#info {
+    position: absolute;
+    left: 20px;
+    top: 20px;
+}
+
+#info a:focus {
+    outline: none;
+}
+
 nav ul {
     list-style: none;
     position: absolute;
-    right: 20px;
+    top: 5px;
+    right: 35px;
 }
 
 nav ul li {
     display: inline-block;
-    margin: 10px 20px 0 0;
+    padding-left: 25px;
 }
 
 nav input:focus {
@@ -78,3 +89,10 @@ nav input:focus {
     font-style: italic;
     font-weight: bold;
 }
+
+#devpost {
+    text-decoration: none;
+    width: auto;
+}
+
+#devpost:hover {}

@@ -25,8 +25,8 @@
     <title>February Hummingbird</title>
 </head>
 <body>
+    <a href="about.html"><img id="info" src="my-icons/info.png"></a>
     <?php
-        require('vendor/autoload.php');
         echo <<<END
             <form action="$_SERVER[PHP_SELF]" method="post">
 END;
@@ -83,8 +83,8 @@ END;
             $a11712 = 'Dare';
             $a118 = 'Coconut';
             $a119 = 'Banana';
-            $a1191 = 'Flight';
-            $a1192 = 'Fight';
+            $a1191 = 'Dream';
+            $a1192 = 'Stay';
             $a11921 = 'Eggs';
             $a11922 = 'Sword';
             $a119221 = 'Stop fighting to apologize for assuming the gorilla’s gender';
@@ -106,8 +106,8 @@ END;
             echo <<<END
                 <nav>
                     <ul>
-                        <li><a href="javascript:history.go(-1)"><img src="icons/back.png" alt="back icon"></a></li>
-                        <li><input id="restart" type="image" name="stage" src="icons/restart.png" value="-1"></li>
+                        <li><a href="javascript:history.go(-1)"><img src="my-icons/back.png" alt="back icon"></a></li>
+                        <li><input id="restart" type="image" name="stage" src="my-icons/restart.png" value="-1"></li>
                     </ul>
                 </nav>
                 <img id="logo" src="logo/fhb logo.png" alt="February Hummingbird logo">
@@ -121,7 +121,7 @@ END;
                     <p>You wake up, your face smushed against a train window. You don’t remember who you are or why you’re on this train, so you take deep breaths and try to gather any available information. Your ticket says you left Denver, Colorado, with a final destination of Birmingham, Alabama. The date on the ticket tells you this is February, but out the window it looks sunny and green, as if it were summer. Probably global warming. Darn atmosphere.<br><br>
                     You hear an announcement that the train is about to stop in Kansas City. You have a strong gut feeling that you live there.</p>
                     <div class="options">
-                        <input type="hidden" name="stage" value="q0">
+                        <input type="hidden" name="stage" value="q">
                         <input class="button" name="answer" type="submit" value="$a3">
                         <input class="button" name="answer" type="submit" value="$a2">
                         <input class="button" name="answer" type="submit" value="$a1">
@@ -141,7 +141,7 @@ END;
 	That is the most appealing array of fruit you have ever seen. It’s as if you cannot draw your eyes away. There’s a towering pyramid of apples balanced atop one another, their dappled yellow-red flesh shining like a sunset. There is a sweet, faintly musky scent coming from the papayas. The skin of the peaches seems no thicker than a sheet of tissue paper, barely concealing their soft flesh. The mandarin oranges with their pocked peels are plump, promising juice.  The bunches of bananas are perfectly ripe, neither green-tipped nor speckled with brown. Somehow even the fruits you don’t usually eat seem appetizing, the sharp, refreshing smell of the lemons, the hairy coconuts the size of your head. The mangoes’ gold and crimson skin showed faint wrinkles, indicating they are ready to eat. And at the end of the table, a little carton of burritos, plump and fragrant in their tortillas.<br><br> 
 	You reach into your pocket and find a dollar. You can buy one fruit. Which do you choose?</p>
                     <div class="options">
-                        <input type="hidden" name="stage" value="q1">
+                        <input type="hidden" name="stage" value="q">
                         <input class="button" name="answer" type="submit" value="$a119">
                         <input class="button" name="answer" type="submit" value="$a118">
                         <input class="button" name="answer" type="submit" value="$a117">
@@ -451,9 +451,6 @@ END;
             } elseif($answer == $a119) {
                 echo <<<END
                     <p>You point to the bananas, and the vendor nods, deftly snapping a kingly one from the bunch. Once the banana is in your hand you remember. You understand everything.<br><br>
-                    You throw the banana down on the ground. The story ends.<br><br><br><br>
-                    You wake up in your bed, furrow your brow, and go back to sleep.<br><br>
-                    I guess it was all a dream.<br><br>
                     Defiantly, you peel the banana and take a bite. You stay in Wonderland to find out how deep the rabbit hole goes.<br><br><br><br>
                     You sense him behind you, stepping onto the patio that marks the boundary of the farmer’s market. He does not see you yet, but raises his head to the sky and sniffs. The two of you lock eyes. It’s him. The gorilla.</p>
                     <div class="options">
@@ -578,7 +575,20 @@ END;
 END;
             } elseif ($answer == $a2) {
                 echo <<<END
-                    <p>After a long train ride with several transfers in between, you arrive in Birmingham.</p>
+                    <p>After a long train ride with several transfers in between, you arrive in Birmingham.  As you descend the train’s stairs, you spot a short man with glasses and dark hair jumping up and down. He’s shouting “Bunny! Bunny!”<br><br>
+                    You think his excitement is a little excessive, but rabbits are adorable. You walk toward him in the hopes of glimpsing it, only to have the man grab you by the arm and shout “Bunny!” right in your face.<br><br>
+                    You realize he is addressing you as Bunny for some reason. “Do I know you?” you ask.<br><br>
+                    “Bunny, we don’t have time for this,” he says. “We’re gonna be late.” He is dragging you through the crowd of people surrounding the train.<br><br>
+                    “Where are we going?” you ask, though you gamely run beside him.<br><br>
+                    “The hackathon, you dingus! We’re gonna be late!”<br><br>
+                    He pulls you into a car that has three other people in it already. When the two of you get in, it’s a tight squeeze.<br><br>
+                    “Bunny’s having an identity crisis,” the short man said. The occupants of the car sound off in order, left to right and front to back.<br><br>
+                    “Platypus.”<br><br>
+                    “Moose.”<br><br>
+                    “T. Rex.”<br><br>
+                    “And I’m Goat,” says the first man you met.<br><br>
+                    “And I’m Bunny,” you say hesitantly.<br><br>
+                    Everyone else bursts out laughing.</p>
                     <div class="options">
                         <input type="hidden" name="stage" value="q">
                         <input class="button" name="answer" type="submit" value="$a22">
@@ -659,13 +669,17 @@ END;
 END;
         }
         // Main control
-        if ($_POST['stage'] == 'start' AND $_POST['answer'] == '') {
-            post_question($_POST['stage'], 0);
-        } elseif ($_POST['answer'] == '') {
-            beginning();
+        if (isset($_POST['stage'])) {
+            if ($_POST['stage'] == 'start') {
+                post_question($_POST['stage'], 0);
+            } elseif ($_POST['stage'] == 'q' AND isset($_POST['answer'])) {
+                $answer = $_POST['answer'];
+                post_question($_POST['stage'], $answer);
+            } else {
+                beginning();
+            }
         } else {
-            $answer = $_POST['answer'];
-            post_question($_POST['stage'], $answer);
+            beginning();
         }
     ?>
 </body>
