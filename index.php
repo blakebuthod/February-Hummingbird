@@ -83,13 +83,15 @@ END;
             $a11712 = 'Dare';
             $a118 = 'Coconut';
             $a119 = 'Banana';
-            $a1191 = 'Dream';
-            $a1192 = 'Stay';
-            $a11921 = 'Eggs';
-            $a11922 = 'Sword';
-            $a119221 = 'Stop fighting to apologize for assuming the gorilla’s gender';
-            $a119222 = 'Stop fighting. You can’t hit a girl';
-            $a119223 = 'Keep fighting';
+            $a1191 = 'Return to your boring life';
+            $a1192 = 'See how deep the rabbit hole goes';
+            $a11921 = 'Flight';
+            $a11922 = 'Fight';
+            $a119221 = 'Eggs';
+            $a119222 = 'Sword';
+            $a1192221 = 'Stop fighting to apologize for assuming the gorilla’s gender.';
+            $a1192222 = 'Stop fighting. You can’t hit a girl.';
+            $a1192223 = 'Keep fighting';
             $a12 = 'Just go home';
             $a121 = 'Decline politely';
             $a1211 = 'Get on the train';
@@ -113,9 +115,6 @@ END;
                 <img id="logo" src="logo/fhb logo.png" alt="February Hummingbird logo">
                 <div class="content">
 END;
-            /*print("Came from $number <br>");
-            print("Answer: $answer");*/
-            
             if ($number == 'start') {
                 echo <<<END
                     <p>You wake up, your face smushed against a train window. You don’t remember who you are or why you’re on this train, so you take deep breaths and try to gather any available information. Your ticket says you left Denver, Colorado, with a final destination of Birmingham, Alabama. The date on the ticket tells you this is February, but out the window it looks sunny and green, as if it were summer. Probably global warming. Darn atmosphere.<br><br>
@@ -450,9 +449,7 @@ END;
 END;
             } elseif($answer == $a119) {
                 echo <<<END
-                    <p>You point to the bananas, and the vendor nods, deftly snapping a kingly one from the bunch. Once the banana is in your hand you remember. You understand everything.<br><br>
-                    Defiantly, you peel the banana and take a bite. You stay in Wonderland to find out how deep the rabbit hole goes.<br><br><br><br>
-                    You sense him behind you, stepping onto the patio that marks the boundary of the farmer’s market. He does not see you yet, but raises his head to the sky and sniffs. The two of you lock eyes. It’s him. The gorilla.</p>
+                    <p>You point to the bananas, and the vendor nods, deftly snapping a kingly one from the bunch. Once the banana is in your hand you remember. You understand everything.</p>
                     <div class="options">
                         <input type="hidden" name="stage" value="q">
                         <input class="button" name="answer" type="submit" value="$a1191">
@@ -461,17 +458,14 @@ END;
             } elseif($answer == $a1191) {
                 echo <<<END
                     <script>document.body.style.backgroundColor = '$yellow';</script>
-                    <p>You drop your banana and run, dodging around Amish farmers in their overalls, past hipsters marveling at homemade jams. The gorilla follows at a casual pace. The pace of a hunter who has already won.<br><br>
-                    You are hit by a bus. The gorilla sprints to your side and… pulls off its head. The world spinning around you, you wonder whether this is a pre-death hallucination. Or whether the banana was drugged. <br><br>
-                    “Oh my god, oh my god, oh my god,” says the freckled teenager inside the gorilla suit. “This isn’t what was supposed to happen. It was just a prank.” You feel a warm trickle of blood from your head, but no pain. You are just staring up at the teenager’s face as if it holds all the secrets of the world. Each of us does. Every last one of us.<br><br>
-                    His hot tears fall on your face. You smile weakly. You want him to know you don’t blame him, and search for words to this effect. Only one comes to mind. “Hello,” you say.<br><br>
+                    <p>You throw the banana down on the ground. The story ends.
+	You wake up in your bed, furrow your brow, and go back to sleep.<br><br>
                     <div class="ending">
-                        You die with a sense of peace.</p>
+                        I guess it was all a dream.</p>
 END;
             } elseif($answer == $a1192) {
                 echo <<<END
-                    <p>You throw your banana on the ground and crush it under your heel like a cigarette, getting pale yellow mush all over your shoes. You don’t care. You’ve got a fight to fight. You’re gonna get some frickin closure.<br><br>
-                    As you walk toward the gorilla with a purposeful stride, you scan for possible weapons. Your eyes bounce from booth to booth. There’s the fruit stand where you got the banana, which you certainly don’t want to return to. Farm-fresh eggs. A burly man dressed in chain mail is hawking… swords.</p>
+                    <p>Defiantly, you peel the banana and take a bite. You’re staying in Wonderland. You sense him behind you, stepping onto the patio that marks the boundary of the farmer’s market. He does not see you yet, but raises his head to the sky and sniffs. The two of you lock eyes. It’s him. The gorilla.</p>
                     <div class="options">
                         <input type="hidden" name="stage" value="q">
                         <input class="button" name="answer" type="submit" value="$a11921">
@@ -480,41 +474,60 @@ END;
             } elseif($answer == $a11921) {
                 echo <<<END
                     <script>document.body.style.backgroundColor = '$yellow';</script>
-                    <p>You grab a carton of eggs, shouting an apology to the young woman with the print dress and long braid at the table. She looks confused, but calls, “Good luck!”
-“Luck is not in my vernacular!” you yell back, throwing eggs as you run, but they are landing wildly off mark, hitting the ground, a tree, a passerby. The gorilla is just standing there, waiting for you.<br><br>
-                    You are now only a couple yards away from the gorilla. You throw one more egg, which goes wide, but the gorilla calmly reaches out one hand and grabs it from the air like a fly.<br><br>
-                    You are regretting every decision you have made since you woke up this morning. The gorilla strides toward you on its bandy legs, arms swinging loosely. It gives you the egg back, looming over you. You feel the gorilla’s hot breath on your forehead, smell the halitosis. It grabs your jaw with one huge hand and tilts your face up aggressively.<br><br>
-                    “Be careful,” the gorilla grunts. “Go meet Jensen. The Lichtenstein Hilton.” And it walks away.<br><br>
+                    <p>You drop your banana and run, dodging around Amish farmers in their overalls, past hipsters marveling at homemade jams. The gorilla follows at a casual pace. The pace of a hunter who has already won.<br><br>
+                    You are hit by a bus. The gorilla sprints to your side and…pulls off its head. The world spinning around you, you wonder whether this is a pre-death hallucination. Or whether the banana was drugged.<br><br>
+                    “Oh my god, oh my god, oh my god,” says the freckled teenager inside the gorilla suit. “This isn’t what was supposed to happen. It was just a prank.” You feel a warm trickle of blood from your head, but no pain. You are just staring up at the teenager’s face as if it holds all the secrets of the world. Each of us does. Every last one of us.<br><br>
+                    His hot tears fall on your face. You smile weakly. You want him to know you don’t blame him, and search for words to this effect. Only one comes to mind. “Hello,” you say.<br><br>
                     <div class="ending">
-                        You remember you are a spy embroiled in a worldwide crisis</p>
+                        You die with a sense of peace.</p>
 END;
             } elseif($answer == $a11922) {
                 echo <<<END
-                    <p>You dash past the Ren Fair booth, snatching a sword from its scabbard. You don’t need to say anything to the vendor. He knows a quest when he sees one. “Defeat that ne’er-do-well!” he calls after you.<br><br>
-                    You can’t read the gorilla’s expression, but judging from the way he is glancing around, he has lost his cool. His long hand closes around a long piece of wood engraved with the phrase “I’d rather be fishing,” and raises it to parry your strike just as you lunge with your sword.<br><br>
-                    The gorilla is fighting defensively, just blocking all of your attacks without initiating any of his own.<br><br>
-                    Veins pumping with adrenaline, you shout, “Fight me like a man!”<br><br>
-                    The gorilla growls, which you somehow understand to mean, “I am a female gorilla.” And then, “It is dishonorable to injure a weakling like you.”
-</p>
+                    <p>You throw your banana on the ground and crush it under your heel like a cigarette, getting pale yellow mush all over your shoes. You don’t care. You’ve got a fight to fight. You’re gonna get some frickin closure.<br><br>
+                    As you walk toward the gorilla with a purposeful stride, you scan for possible weapons. Your eyes bounce from booth to booth. There’s the fruit stand where you got the banana, which you certainly don’t want to return to. Farm-fresh eggs. A burly man dressed in chain mail is hawking… swords.</p>
                     <div class="options">
                         <input type="hidden" name="stage" value="q">
-                        <input class="button" name="answer" type="submit" value="$a119223">
                         <input class="button" name="answer" type="submit" value="$a119222">
                         <input class="button" name="answer" type="submit" value="$a119221">
 END;
             } elseif($answer == $a119221) {
                 echo <<<END
                     <script>document.body.style.backgroundColor = '$green';</script>
-                    <p>You let your sword arm fall. “Listen, I’m sorry,” you say. “I try not to make assumptions about gender, I just was so scared I wasn’t thinking clearly. I know I have a lot of learning left to do.”<br><br>
+                    <p>You grab a carton of eggs, shouting an apology to the young woman with the print dress and long braid at the table. She looks confused, but calls, “Good luck!”<br><br>
+                    “Luck is not in my vernacular!” you yell back, throwing eggs as you run, but they are landing wildly off mark, hitting the ground, a tree, a passerby. The gorilla is just standing there, waiting for you.<br><br>
+                    You are now only a couple yards away from the gorilla. You throw one more egg, which goes wide, but the gorilla calmly reaches out one hand and grabs it from the air like a fly.<br><br>
+                    You are regretting every decision you have made since you woke up this morning. The gorilla strides toward you on its bandy legs, arms swinging loosely. It gives you the egg back, looming over you. You feel the gorilla’s hot breath on your forehead, smell the halitosis. It grabs your jaw with one huge hand and tilts your face up aggressively.<br><br>
+                    “Be careful,” the gorilla grunts. “Go meet Jensen. The Lichtenstein Hilton.” And it walks away.<br><br>
+                    <div class="ending">
+                        You remember you are a spy embroiled in a worldwide crisis.</p>
+END;
+            } elseif($answer == $a119222) {
+                echo <<<END
+                    <p>You dash past the Ren Fair booth, snatching a sword from its scabbard. You don’t need to say anything to the vendor. He knows a quest when he sees one. “Defeat that ne’er-do-well!” he calls after you.<br><br>
+                    You can’t read the gorilla’s expression, but judging from the way he is glancing around, he has lost his cool. His long hand closes around a long piece of wood engraved with the phrase “I’d rather be fishing,” and raises it to parry your strike just as you lunge with your sword.<br><br>
+                    The gorilla is fighting defensively, just blocking all of your attacks without initiating any of his own.<br><br>
+                    Veins pumping with adrenaline, you shout, “Fight me like a man!”
+	The gorilla growls, which you somehow understand to mean, “I am a female gorilla.” And then, “It is dishonorable to injure a weakling like you.”</p>
+                    <div class="options">
+                        <input type="hidden" name="stage" value="q">
+                        <input class="button" name="answer" type="submit" value="$a1192223">
+                        <input class="button" name="answer" type="submit" value="$a1192222">
+                        <input class="button" name="answer" type="submit" value="$a1192221">
+END;
+            } elseif($answer == $a1192221) {
+                echo <<<END
+                    <script>document.body.style.backgroundColor = '$green';</script>
+                    <p>Stop fighting to apologize for assuming the gorilla’s gender.
+	You let your sword arm fall. “Listen, I’m sorry,” you say. “I try not to make assumptions about gender, I just was so scared I wasn’t thinking clearly. I know I have a lot of learning left to do.”<br><br>
                     The gorilla nods and reaches out a hand to shake in truce. You lift your own, shifting the sword to your non-dominant hand.<br><br>
                     The gorilla makes a quiet hooting sound.<br><br>
                     “Yes, it is a beautiful sword,” you agree. “It’s not mine, though, I was just borrowing it from that guy for this fight.”<br><br>
                     The gorilla leads you back to the chain-mail-clad man and pays for the sword. She puts a heavy hand on your shoulder and growls kindly, “This is a worthy weapon. But you will need a mentor to teach you about fighting and not making assumptions about masculinity or a gender binary. Would you like to be my apprentice?”<br><br>
-                    You kneel down, fist over your heart. “It would be an honor.”<br><br>
+                    You kneel down, fist over your heart. “It would be an honor.<br><br>
                     <div class="ending">
                         You gain a mentor!</p>
 END;
-            } elseif($answer == $a119222) {
+            } elseif($answer == $a1192222) {
                 echo <<<END
                     <script>document.body.style.backgroundColor = '$red';</script>
                     <p>You let your sword arm fall. “This just feels wrong. I can’t fight a girl.”<br><br>
@@ -524,18 +537,18 @@ END;
                     <div class="ending">
                         Die in confusion</p>
 END;
-            } elseif($answer == $a119223) {
+            } elseif($answer == $a1192223) {
                 echo <<<END
                     <script>document.body.style.backgroundColor = '$yellow';</script>
                     <p>“I’m no weakling!” you shout. You swing your sword wildly. The sword salesman runs over to disrupt the fight.<br><br>
                     “I’m sorry, quester, but your form is terrible. You might injure a bystander.”<br><br>
                     The gorilla growls in agreement. Her eyes lock with the swordsman’s and they exchange a look of Mamihalapinatapai. The swordsman breaks the eye contact, looking down at the ground. The gorilla is a powerful warrior. Way out of his league. He just makes the swords, he doesn’t use them.<br><br>
-                    The gorilla gives a soft hoot. She is complimenting his handiwork.<br><br>
-                    You are not sure either of them remember you are even standing there.<br><br>
+                    The gorilla gives a soft hoot. She is complimenting his handiwork.
+	You are not sure either of them remember you are even standing there.<br><br>
                     They are walking toward his booth so he can show her the other weapons he has made, the mace, the stiletto dagger, the unfinished crossbow.<br><br>
                     You stand there, still holding a sword. You are wishing you hadn’t thrown your banana on the ground, as you’re pretty hungry, especially after exerting all that energy in the fight. You sigh and lay the sword on the ground. Might as well head home and eat some cereal.<br><br>
                     <div class="ending">
-                        Eat cereal at home, alone. </p>
+                        Eat cereal at home, alone.</p>
 END;
             } elseif($answer == $a12) {
                 echo <<<END
@@ -663,8 +676,10 @@ END;
 END;
             }
             echo <<<END
+                    <br><br>
                     </div>
                 </div>
+                <div class="gradientback"></div>
             </form>
 END;
         }
