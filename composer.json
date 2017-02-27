@@ -2,8 +2,11 @@
     "name": "fhb",
     "autoload": {
         "psr-4": {
-            "index.php\\": "main//"
-        }
+            "index.php\\": "src//"
+        },
+        "classmap": [
+            "src/index.php"
+        ]
     },
     "authors": [
         {
@@ -21,8 +24,5 @@
     "require": {
         "silex/silex": "~1.1",
         "php": "^5.3.3 || ^7.0"
-    },
-    "require-dev": {
-        "silex/silex": "~1.1"
     }
 }
