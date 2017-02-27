@@ -2,7 +2,7 @@
     "name": "fhb",
     "autoload": {
         "psr-4": {
-            "index.html\\": "main//"
+            "index.php\\": "main//"
         }
     },
     "authors": [
