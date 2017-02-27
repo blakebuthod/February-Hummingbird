@@ -1,13 +1,15 @@
 {
-    
-  "require": {
-    "index.php": "~1.1",
-  }
-  "authors": [
+    "name": "fhb",
+    "autoload": {
+        "psr-4": {
+            "index.html\\": "main//"
+        }
+    },
+    "authors": [
         {
             "name": "Blake Buthod",
             "email": "blakebuthod@gmail.com",
-            "homepage": "github.com/blakebuthod",
+            "homepage": "https://github.com/blakebuthod",
             "role": "Developer"
         },
         {
@@ -15,4 +17,11 @@
             "email": "marisa.gearin@gmail.com",
             "role": "Writer"
         }
+    ],
+    "require": {
+        "silex/silex": "~1.1"
+    },
+    "require-dev": {
+        "silex/silex": "~1.1"
+    }
 }
