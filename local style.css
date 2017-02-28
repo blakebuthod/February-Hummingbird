@@ -23,7 +23,7 @@ nav ul {
     list-style: none;
     position: absolute;
     top: 5px;
-    right: 35px;
+    right: 25px;
 }
 
 nav ul li {
@@ -50,6 +50,8 @@ nav input:focus {
     overflow: hidden;
 }
 
+
+
 .beginning {
     text-align: center;
     color: #3f007f;
@@ -74,6 +76,7 @@ nav input:focus {
 .button {
     font-size: 14px;
     font-family: 'Lora', serif;
+    color: #000000;
     background-color: #ffffff;
     border: none;
     border-radius: 5px;
@@ -102,6 +105,7 @@ nav input:focus {
 
 .about ul li {
     display: inline-block;
+    color: #3f007f;
 }
 
 .about a {
