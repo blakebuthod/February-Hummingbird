@@ -125,7 +125,7 @@ END;
                         <input class="button" name="answer" type="submit" value="$a2">
                         <input class="button" name="answer" type="submit" value="$a1">
 END;
-            } elseif($answer == $a1 OR $answer == $a1211) {
+            } elseif($answer == $a1) {
                 echo <<<END
                     <p>You get off the train and just start walking, no specific destination, hoping something will strike you as familiar. And it does. Each building you pass makes you more and more certain that you truly do live here. You feel the keys jingling in your pocket, and, examining them, suddenly remember your house, a red duplex. You can almost smell the tar on your driveway.<br><br>
                     It’s a relief to remember this, but something still feels off. You feel as though someone is watching you. Most likely you’re just being paranoid because of whatever events you’ve forgotten which led you to get on a train in Denver.</p>
@@ -586,7 +586,7 @@ END;
                     <div class="ending">
                         Death by peanut butter</p>
 END;
-            } elseif ($answer == $a2) {
+            } elseif ($answer == $a2 OR $answer == $a1211) {
                 echo <<<END
                     <p>After a long train ride with several transfers in between, you arrive in Birmingham.  As you descend the train’s stairs, you spot a short man with glasses and dark hair jumping up and down. He’s shouting “Bunny! Bunny!”<br><br>
                     You think his excitement is a little excessive, but rabbits are adorable. You walk toward him in the hopes of glimpsing it, only to have the man grab you by the arm and shout “Bunny!” right in your face.<br><br>
