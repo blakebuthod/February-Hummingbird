@@ -33,7 +33,7 @@ END;
         function beginning() {
             echo <<<END
                 <div class="beg-logo">
-                    <img id="#beg-logo" src="logo/fhb logo.png" alt="February Hummingbird logo">
+                    <img id="#beg-logo" src="logo/logo.png" alt="February Hummingbird logo">
                 </div>
                 <div class="content beginning">
                     <h2>February Hummingbird</h2>
